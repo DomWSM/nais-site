@@ -2394,7 +2394,7 @@
   transform: scale(1.06);
 }
 
-/* === How we work: number colour shift on hover (match About behaviour) === */
+/* How we work: make step number visibly change on hover */
 .step-card__num{
   transition:
     transform .18s ease,
@@ -2405,17 +2405,18 @@
 }
 
 .step-card:hover .step-card__num{
-  background: linear-gradient(135deg, var(--c-300), var(--c-600));
-  color: var(--c-900);
-  box-shadow: 0 12px 30px rgba(74,127,167,0.18);
+  /* lighter hover (noticeably different from the default) */
+  background: linear-gradient(135deg, rgba(246,250,253,0.95), var(--c-300)) !important;
+  color: var(--c-900) !important;
+  box-shadow: 0 12px 30px rgba(74,127,167,0.18) !important;
   transform: translateY(-1px);
 }
 
-/* Optional: keyboard focus gets the same treatment */
+/* optional: keyboard focus matches hover */
 .step-card:focus-within .step-card__num{
-  background: linear-gradient(135deg, var(--c-300), var(--c-600));
-  color: var(--c-900);
+  background: linear-gradient(135deg, rgba(246,250,253,0.95), var(--c-300)) !important;
+  color: var(--c-900) !important;
   box-shadow:
     0 0 0 3px rgba(179,207,229,0.75),
-    0 12px 30px rgba(74,127,167,0.18);
+    0 12px 30px rgba(74,127,167,0.18) !important;
 }
