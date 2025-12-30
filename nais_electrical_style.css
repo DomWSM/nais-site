@@ -2393,7 +2393,7 @@
 
 
 /* Footer active link styling (match main nav behaviour) */
-.footer__link,
+/* Keep site-footer variant support */
 .site-footer__links a{
   display: inline-flex;
   align-items: center;
@@ -2402,18 +2402,35 @@
   transition: background .18s ease, color .18s ease, transform .18s ease;
 }
 
-/* Hover matches header nav feel */
-.footer__link:hover,
 .site-footer__links a:hover{
   background: rgba(246,250,253,0.06);
   color: var(--c-600);
 }
 
-/* Active state (use .is-active OR aria-current="page") */
-.footer__link.is-active,
-.footer__link[aria-current="page"],
 .site-footer__links a.is-active,
 .site-footer__links a[aria-current="page"]{
+  background: rgba(246,250,253,0.07);
+  color: var(--c-600);
+}
+
+/* FOOTER NAV pills — scoped so it doesn't affect phone link etc. */
+.footer__nav .footer__link{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+/* Hover (match header nav) */
+.footer__nav .footer__link:hover{
+  background: rgba(246,250,253,0.06);
+  color: var(--c-600);
+}
+
+/* Active (match header nav) */
+.footer__nav .footer__link.is-active,
+.footer__nav .footer__link[aria-current="page"]{
   background: rgba(246,250,253,0.07);
   color: var(--c-600);
 }
