@@ -2330,3 +2330,23 @@
     .contact-info__grid .info-card{ grid-column: span 12; }
     .field{ grid-column: span 12; }
   }
+
+  /* TEST OVERRIDE: Service card divider flush fix */
+.svc-card__media{
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.svc-card__media img{
+  position: absolute;
+  inset: -1px;                 /* covers tiny gaps from transforms */
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  object-fit: cover;
+  display: block;
+}
+
+.svc-card__media::before{
+  bottom: -1px;                /* forces divider to sit flush */
+}
