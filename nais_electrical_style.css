@@ -2429,3 +2429,11 @@
   box-shadow: 0 14px 34px rgba(10,25,49,0.14) !important;
   transform: translateY(-1px);
 }
+
+/* HOW WE WORK — make the number badge change on hover (match About behaviour) */
+.process .step-card:hover .step-card__num,
+.process .step-card:focus-within .step-card__num{
+  background: linear-gradient(135deg, var(--c-600), var(--c-800)) !important;
+  color: var(--c-050) !important;
+  box-shadow: 0 12px 30px rgba(74,127,167,0.18) !important;
+}
