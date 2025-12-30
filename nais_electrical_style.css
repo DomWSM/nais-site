@@ -2331,34 +2331,19 @@
     .field{ grid-column: span 12; }
   }
 
-  /* TEST OVERRIDE: Service card divider flush fix */
-.svc-card__media{
-  position: relative;
-  overflow: hidden;
-  line-height: 0;
-}
+  /* =========================================================
+   FINAL OVERRIDES (deduped)
+   - Services card: static divider flush with image
+   - Process cards: number badge colour change on hover/focus
+   ========================================================= */
 
-.svc-card__media img{
-  position: absolute;
-  inset: -1px;                 /* covers tiny gaps from transforms */
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  object-fit: cover;
-  display: block;
-}
-
-.svc-card__media::before{
-  bottom: -1px;                /* forces divider to sit flush */
-}
-
-/* === FIX: Services card divider flush with image (static) === */
+/* Services: media + divider (single source of truth) */
 .svc-card__media{
   position: relative;
   overflow: hidden;   /* clips the zoomed image */
-  line-height: 0;     /* prevents any stray inline gap */
+  line-height: 0;     /* prevents inline-gap artifacts */
 }
 
-/* Make the image always fill the media area */
 .svc-card__media img{
   position: absolute;
   inset: 0;
@@ -2371,69 +2356,37 @@
   transition: transform .25s ease;
 }
 
-/* Remove the old divider pseudo-element if it exists */
+/* kill any older divider pseudo element from earlier rules */
 .svc-card__media::before{
   content: none !important;
 }
 
-/* Draw the divider exactly at the bottom edge of the image */
+/* draw divider exactly at the bottom edge */
 .svc-card__media::after{
   content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  height:3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
   background: linear-gradient(90deg, transparent, rgba(179,207,229,0.65), transparent);
   z-index: 2;
-  pointer-events:none;
+  pointer-events: none;
 }
 
-/* Keep your hover zoom (same effect, but no gap now) */
 .svc-card:hover .svc-card__media img{
   transform: scale(1.06);
 }
 
-/* How we work: make step number visibly change on hover */
-.step-card__num{
-  transition:
-    transform .18s ease,
-    background .18s ease,
-    border-color .18s ease,
-    color .18s ease,
-    box-shadow .18s ease;
+/* How we work: number badge hover (match About behaviour) */
+.process .step-card__num{
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
 }
 
-.step-card:hover .step-card__num{
-  /* lighter hover (noticeably different from the default) */
-  background: linear-gradient(135deg, rgba(246,250,253,0.95), var(--c-300)) !important;
-  color: var(--c-900) !important;
-  box-shadow: 0 12px 30px rgba(74,127,167,0.18) !important;
-  transform: translateY(-1px);
-}
-
-/* optional: keyboard focus matches hover */
-.step-card:focus-within .step-card__num{
-  background: linear-gradient(135deg, rgba(246,250,253,0.95), var(--c-300)) !important;
-  color: var(--c-900) !important;
-  box-shadow:
-    0 0 0 3px rgba(179,207,229,0.75),
-    0 12px 30px rgba(74,127,167,0.18) !important;
-}
-
-/* Process cards: make the step number change on hover (strong specificity) */
-.process .step-card:hover .step-card__num{
-  background: linear-gradient(135deg, var(--c-600), var(--c-800)) !important;
-  color: var(--c-050) !important;
-  border-color: rgba(10,25,49,0.18) !important;
-  box-shadow: 0 14px 34px rgba(10,25,49,0.14) !important;
-  transform: translateY(-1px);
-}
-
-/* HOW WE WORK — make the number badge change on hover (match About behaviour) */
 .process .step-card:hover .step-card__num,
 .process .step-card:focus-within .step-card__num{
   background: linear-gradient(135deg, var(--c-600), var(--c-800)) !important;
   color: var(--c-050) !important;
   box-shadow: 0 12px 30px rgba(74,127,167,0.18) !important;
+  transform: translateY(-1px);
 }
