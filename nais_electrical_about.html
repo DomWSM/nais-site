@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About NAIS — safety-led, practical delivery for demanding onshore and offshore environments." />
+  <title>About | NAIS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./nais_electrical_style.css">
+  <script defer src="./nais_electrical_script.js"></script>
+</head>
+
+<body class="page-about">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================
+       COMPONENT: HEADER / NAV (same as home)
+       ========================= -->
+  <header class="nais-header" data-nais-header>
+    <div class="container nais-header__inner">
+      <a class="nais-brand" href="nais_electrical.html" aria-label="NAIS Home">
+        <img
+          class="nais-brand__logo"
+          src="./_assets/_images/logo-placeholder.svg"
+          alt="NAIS"
+        />
+      </a>
+
+      <button class="nais-burger" type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="naisMobilePanel"
+        data-nais-burger>
+        <span class="nais-burger__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nais-nav" aria-label="Primary navigation">
+        <ul class="nais-nav__list">
+          <li><a class="nais-nav__link" href="nais_electrical.html">Home</a></li>
+          <li><a class="nais-nav__link is-active" href="about.html">About</a></li>
+          <li><a class="nais-nav__link" href="services.html">Services</a></li>
+          <li><a class="nais-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile panel -->
+    <div class="nais-mobile" id="naisMobilePanel" hidden data-nais-mobile>
+      <div class="nais-mobile__sheet" role="dialog" aria-modal="true" aria-label="Mobile menu">
+        <div class="nais-mobile__head">
+          <span class="nais-mobile__title">Menu</span>
+          <button class="nais-mobile__close" type="button" aria-label="Close menu" data-nais-close>✕</button>
+        </div>
+
+        <div class="nais-mobile__links">
+          <a class="nais-mobile__link" href="nais_electrical.html">Home</a>
+          <a class="nais-mobile__link" href="about.html">About</a>
+          <a class="nais-mobile__link" href="services.html">Services</a>
+          <a class="nais-mobile__link" href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="nais-mobile__backdrop" data-nais-backdrop aria-hidden="true"></div>
+    </div>
+  </header>
+  <!-- =========================
+       /COMPONENT: HEADER / NAV
+       ========================= -->
+
+  <main id="main">
+
+    <!-- =========================
+         COMPONENT: ABOUT HERO (light)
+         ========================= -->
+    <section class="about-hero" id="top" style="--about-hero-image:url('https://placehold.co/1600x900');">
+      <div class="about-hero__media" aria-hidden="true"></div>
+      <div class="about-hero__overlay" aria-hidden="true"></div>
+
+      <div class="container about-hero__inner">
+        <div class="about-hero__box">
+          <p class="about-hero__eyebrow">About NAIS</p>
+          <h1 class="about-hero__title">Built for demanding environments</h1>
+          <p class="about-hero__lead">
+            NAIS supports clients across oil &amp; gas, petrochemical, renewables, and industrial sectors with practical,
+            safety-led delivery in challenging environments — onshore and offshore.
+          </p>
+
+          <div class="about-hero__actions">
+            <a class="btn btn--primary" href="contact.html">Talk to a Specialist</a>
+          </div>
+        </div>
+
+        <div class="about-hero__stats" aria-label="Key highlights">
+          <div class="about-stat">
+            <div class="about-stat__value">25+ years</div>
+            <div class="about-stat__label">Delivery experience</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat__value">Onshore + Offshore</div>
+            <div class="about-stat__label">High-compliance environments</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat__value">Safety-led</div>
+            <div class="about-stat__label">Planning and execution</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+         /COMPONENT: ABOUT HERO
+         ========================= -->
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+         COMPONENT: BUILT FOR (light split)
+         ========================= -->
+    <section class="about-section about-section--light" id="built-for">
+      <div class="container about-split">
+        <div class="about-split__copy">
+          <h2 class="about-h2">Built for demanding environments</h2>
+          <p class="about-lead">
+            Our work is focused on helping operators protect asset integrity, reduce risk, and complete critical scopes with confidence.
+          </p>
+          <p class="about-body">
+            With over 25 years’ experience, we’ve delivered complex maintenance and specialist works on a wide range of structures and sites —
+            from football stadiums and telecom towers to offshore derrick structures and wind assets. That breadth of experience means we understand
+            tight access windows, live operating environments, and the need for clear communication and dependable performance.
+          </p>
+        </div>
+
+        <aside class="about-card" aria-label="Experience highlights">
+          <h3 class="about-card__title">Where we operate</h3>
+          <ul class="about-list">
+            <li>Onshore &amp; offshore assets</li>
+            <li>Live operating environments</li>
+            <li>Tight access windows</li>
+            <li>Complex structures and sites</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <!-- =========================
+         /COMPONENT: BUILT FOR
+         ========================= -->
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+     COMPONENT: VALUES (DARK + IMAGE)
+     ========================= -->
+<section class="about-section about-section--darkImage" id="values"
+style="--about-section-image:url('https://placehold.co/1600x900');">
+<div class="about-section__media" aria-hidden="true"></div>
+<div class="about-section__overlay" aria-hidden="true"></div>
+
+<div class="container">
+  <header class="about-head about-head--onDark">
+    <h2 class="about-h2 about-h2--onDark">What we stand for</h2>
+    <p class="about-lead about-lead--onDark">Safety, competence, and clarity.</p>
+  </header>
+
+  <div class="about-grid about-grid--onDark">
+    <article class="about-mini about-mini--onDark">
+      <div class="about-mini__icon about-mini__icon--onDark" aria-hidden="true">🛡️</div>
+      <h3 class="about-mini__title about-mini__title--onDark">Safety-led delivery</h3>
+      <p class="about-mini__text about-mini__text--onDark">Disciplined planning to support safe, efficient execution.</p>
+    </article>
+
+    <article class="about-mini about-mini--onDark">
+      <div class="about-mini__icon about-mini__icon--onDark" aria-hidden="true">👷</div>
+      <h3 class="about-mini__title about-mini__title--onDark">Competent teams</h3>
+      <p class="about-mini__text about-mini__text--onDark">Experienced people with the right trade and offshore competence.</p>
+    </article>
+
+    <article class="about-mini about-mini--onDark">
+      <div class="about-mini__icon about-mini__icon--onDark" aria-hidden="true">✅</div>
+      <h3 class="about-mini__title about-mini__title--onDark">Quality-focused</h3>
+      <p class="about-mini__text about-mini__text--onDark">Delivery that reduces rework, downtime, and uncertainty.</p>
+    </article>
+
+    <article class="about-mini about-mini--onDark">
+      <div class="about-mini__icon about-mini__icon--onDark" aria-hidden="true">📄</div>
+      <h3 class="about-mini__title about-mini__title--onDark">Clear reporting</h3>
+      <p class="about-mini__text about-mini__text--onDark">Handover and documentation aligned to your expectations.</p>
+    </article>
+  </div>
+</div>
+</section>
+<!-- =========================
+   /COMPONENT: VALUES
+   ========================= -->
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+   <!-- =========================
+     COMPONENT: MULTI-DISCIPLINE (light panel) — UPDATED
+     Pills under copy + right image + pills link to Services anchors
+     ========================= -->
+<section class="about-section about-section--light" id="multi-discipline">
+    <div class="container about-panel about-panel--stackedPills">
+      <!-- Left: copy + pills underneath -->
+      <div class="about-panel__copy">
+        <h2 class="about-h2">Multi-discipline support, one reliable partner</h2>
+  
+        <p class="about-body">
+          NAIS provides integrated support across key service areas including fabric maintenance, inspection and integrity services,
+          renewables scopes, rigging and mechanical/construction works, and electrical solutions.
+        </p>
+  
+        <p class="about-body">
+          Whether you need support for planned maintenance, defect repairs, or shutdown-critical scopes, our teams coordinate effectively
+          to keep work progressing safely and smoothly.
+        </p>
+  
+        <!-- Pills moved under text + now links -->
+        <div class="about-pillgrid about-pillgrid--underText" aria-label="Service areas">
+          <a class="about-pill" href="services.html#fabric-maintenance">Fabric maintenance</a>
+          <a class="about-pill" href="services.html#inspection-integrity">Inspection &amp; integrity</a>
+          <a class="about-pill" href="services.html#renewables">Renewables scopes</a>
+          <a class="about-pill" href="services.html#rigging-mechanical">Rigging &amp; mechanical</a>
+          <a class="about-pill" href="services.html#electrical">Electrical solutions</a>
+        </div>
+      </div>
+  
+      <!-- Right: image placeholder -->
+      <aside class="about-panel__media" aria-label="NAIS team image">
+        <img
+          class="about-panel__img"
+          src="https://placehold.co/640x520"
+          alt="NAIS team working on site"
+          loading="lazy"
+        />
+      </aside>
+    </div>
+  </section>
+    <!-- =========================
+         /COMPONENT: MULTI-DISCIPLINE
+         ========================= -->
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+         COMPONENT: APPROACH (steps)
+         ========================= -->
+    <section class="about-section about-section--light" id="approach">
+      <div class="container">
+        <header class="about-head">
+          <h2 class="about-h2">Our approach</h2>
+          <p class="about-lead">We keep things simple and controlled.</p>
+        </header>
+
+        <ol class="about-steps">
+          <li class="about-step">
+            <span class="about-step__num">1</span>
+            <div class="about-step__body">
+              <h3>Understand the scope</h3>
+              <p>Your objectives, constraints, and site requirements.</p>
+            </div>
+          </li>
+          <li class="about-step">
+            <span class="about-step__num">2</span>
+            <div class="about-step__body">
+              <h3>Survey &amp; plan</h3>
+              <p>Establish the safest and most effective method of work.</p>
+            </div>
+          </li>
+          <li class="about-step">
+            <span class="about-step__num">3</span>
+            <div class="about-step__body">
+              <h3>Deliver</h3>
+              <p>Competent teams, strong supervision, and clear communication.</p>
+            </div>
+          </li>
+          <li class="about-step">
+            <span class="about-step__num">4</span>
+            <div class="about-step__body">
+              <h3>Close out</h3>
+              <p>Documentation and reporting aligned to your expectations.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- =========================
+         /COMPONENT: APPROACH
+         ========================= -->
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+   <!-- =========================
+     COMPONENT: ABOUT CTA (DARK + IMAGE)
+     ========================= -->
+<section class="about-section about-section--ctaDarkImage" id="work-with-nais"
+style="--about-section-image:url('https://placehold.co/1600x900');">
+<div class="about-section__media" aria-hidden="true"></div>
+<div class="about-section__overlay" aria-hidden="true"></div>
+
+<div class="container about-cta about-cta--onDark">
+  <div class="about-cta__copy">
+    <h2 class="about-h2 about-h2--onDark">Work with NAIS</h2>
+    <p class="about-body about-body--onDark">
+      If you’re looking for a contractor who can operate confidently in demanding environments — and who prioritises safe delivery
+      without compromising productivity — we’d be pleased to help.
+    </p>
+    <p class="about-lead about-lead--onDark" style="margin-top:10px;">
+      Ready to discuss an upcoming scope? Use the contact page to request a quote or arrange a call.
+    </p>
+  </div>
+
+  <div class="about-cta__actions">
+    <a class="btn btn--primary" href="contact.html">Request a Quote</a>
+  </div>
+</div>
+</section>
+<!-- =========================
+   /COMPONENT: ABOUT CTA
+   ========================= -->
+   
+  </main>
+
+  <!-- =========================
+       COMPONENT: FOOTER (same as home)
+       ========================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__brand">
+        <a class="footer__logoLink" href="nais_electrical.html" aria-label="NAIS Home">
+          <img class="footer__logo" src="https://placehold.co/180x60?text=LOGO" alt="NAIS" loading="lazy" />
+        </a>
+        <p class="footer__tagline">
+          Integrated inspection, maintenance, and specialist services for critical onshore and offshore assets.
+        </p>
+
+        <div class="footer__social" aria-label="Social links">
+          <a class="social-btn" href="#" aria-label="NAIS on LinkedIn (coming soon)">
+            <svg class="social-btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.94 6.5A2.06 2.06 0 1 1 7 2.38a2.06 2.06 0 0 1-.06 4.12ZM5 21V8.5h3.9V21H5Zm6.1 0V8.5h3.74V10.2h.06c.52-.98 1.8-2.02 3.7-2.02C21.2 8.18 22 10 22 12.84V21h-3.9v-7.08c0-1.69-.03-3.87-2.35-3.87-2.35 0-2.71 1.84-2.71 3.75V21h-3.9Z"/>
+            </svg>
+            <span class="social-btn__text">LinkedIn</span>
+            <span class="social-btn__badge">Coming soon</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col footer__nav" aria-label="Footer navigation">
+        <h3 class="footer__heading">Pages</h3>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="nais_electrical.html">Home</a></li>
+          <li><a class="footer__link" href="about.html">About</a></li>
+          <li><a class="footer__link" href="services.html">Services</a></li>
+          <li><a class="footer__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__contact">
+        <h3 class="footer__heading">Contact</h3>
+        <ul class="footer__meta">
+          <li><span class="footer__metaLabel">Phone:</span> <a class="footer__link" href="tel:+440000000000">+44 0000 000000</a></li>
+          <li><span class="footer__metaLabel">Email:</span> <a class="footer__link" href="mailto:info@nais.co.uk">info@nais.co.uk</a></li>
+          <li><span class="footer__metaLabel">Location:</span> United Kingdom</li>
+        </ul>
+
+        <h3 class="footer__heading footer__heading--spaced">Opening times</h3>
+        <ul class="footer__meta">
+          <li><span class="footer__metaLabel">Mon–Fri:</span> 08:00 – 17:00</li>
+          <li><span class="footer__metaLabel">Sat–Sun:</span> Closed</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomInner">
+        <p class="footer__copy">© <span id="year"></span> NAIS. All rights reserved.</p>
+        <a class="footer__backTop" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <!-- =========================
+       /COMPONENT: FOOTER
+       ========================= -->
+</body>
+</html>

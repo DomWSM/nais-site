@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore NAIS services across inspection, maintenance, renewables, rigging, mechanical, construction and electrical support." />
+  <title>NAIS | Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./nais_electrical_style.css?v=2"> 
+  <script defer src="./nais_electrical_script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================
+      COMPONENT: HEADER / NAV (NAIS - Option A)
+      ========================= -->
+  <header class="nais-header" data-nais-header>
+    <div class="container nais-header__inner">
+      <a class="nais-brand" href="nais_electrical.html" aria-label="NAIS Home">
+        <img class="nais-brand__logo" src="./_assets/_images/logo-placeholder.svg" alt="NAIS" />
+      </a>
+
+      <button class="nais-burger" type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="naisMobilePanel"
+        data-nais-burger>
+        <span class="nais-burger__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nais-nav" aria-label="Primary navigation">
+        <ul class="nais-nav__list">
+          <li><a class="nais-nav__link" href="nais_electrical.html">Home</a></li>
+          <li><a class="nais-nav__link" href="about.html">About</a></li>
+          <li><a class="nais-nav__link is-active" href="services.html">Services</a></li>
+          <li><a class="nais-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nais-mobile" id="naisMobilePanel" hidden data-nais-mobile>
+      <div class="nais-mobile__sheet" role="dialog" aria-modal="true" aria-label="Mobile menu">
+        <div class="nais-mobile__head">
+          <span class="nais-mobile__title">Menu</span>
+          <button class="nais-mobile__close" type="button" aria-label="Close menu" data-nais-close>✕</button>
+        </div>
+
+        <div class="nais-mobile__links">
+          <a class="nais-mobile__link" href="nais_electrical.html">Home</a>
+          <a class="nais-mobile__link" href="about.html">About</a>
+          <a class="nais-mobile__link" href="services.html">Services</a>
+          <a class="nais-mobile__link" href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="nais-mobile__backdrop" data-nais-backdrop aria-hidden="true"></div>
+    </div>
+  </header>
+  <!-- =========================
+      /COMPONENT: HEADER / NAV
+      ========================= -->
+
+  <main id="main">
+    <!-- =========================
+        SERVICES HERO (DARK IMAGE + PARALLAX) — ONE BUTTON ONLY
+        ========================= -->
+    <section class="svc-hero" id="top" data-parallax style="--svc-hero-image:url('https://placehold.co/1920x650');">
+      <div class="svc-hero__media" aria-hidden="true"></div>
+      <div class="svc-hero__overlay" aria-hidden="true"></div>
+
+      <div class="container svc-hero__inner">
+        <div class="svc-hero__box">
+          <h1 class="svc-hero__title">Services</h1>
+          <p class="svc-hero__lead">
+            NAIS provides multi-discipline support to help clients protect asset integrity, improve reliability, and deliver critical scopes safely — onshore and offshore.
+            From inspection and maintenance through to specialist rigging, mechanical and electrical support, we work as a dependable partner from planning through to completion.
+          </p>
+
+          <div class="svc-hero__actions">
+            <a class="btn btn--primary" href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        SERVICES INTRO (LIGHT)
+        ========================= -->
+    <section class="svc-intro" id="service-sections">
+      <div class="container svc-intro__inner">
+        <header class="svc-intro__head">
+          <h2 class="svc-intro__title">Multi-discipline support, delivered safely</h2>
+          <p class="svc-intro__lead">
+            We bring practical planning, competent teams and clear documentation to every scope — so you can reduce risk, improve reliability and deliver work with confidence.
+          </p>
+        </header>
+
+        <!-- UPDATED: links match section IDs below -->
+        <div class="svc-intro__quicklinks" aria-label="Jump to a service">
+          <a class="svc-chip" href="#electrical">Electrical</a>
+          <a class="svc-chip" href="#fabric-maintenance">Fabric Maintenance</a>
+          <a class="svc-chip" href="#inspection-integrity">Inspection &amp; Integrity</a>
+          <a class="svc-chip" href="#renewables">Renewables</a>
+          <a class="svc-chip" href="#rigging-mechanical">Rigging, Mechanical &amp; Construction</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        ELECTRICAL (DARK) — NO BG IMAGE
+        ========================= -->
+    <section class="svc-detail svc-detail--dark" id="electrical">
+      <div class="container svc-detail__inner">
+        <div class="svc-detail__copy">
+          <h2 class="svc-detail__title">Electrical</h2>
+          <p class="svc-detail__text">
+            NAIS has a proven track record in the application of integrated electrical solutions, working closely with customers from project conception through to commissioning and completion.
+            We focus on safe delivery, clear documentation, and a reliable handover.
+          </p>
+
+          <h3 class="svc-detail__sub">Typical support includes:</h3>
+          <ul class="svc-list">
+            <li>Electrical installation support</li>
+            <li>Testing and commissioning assistance</li>
+            <li>Coordination with multidisciplinary works on live sites and shutdowns</li>
+          </ul>
+        </div>
+
+        <aside class="svc-detail__card">
+          <img src="https://placehold.co/640x420" alt="Electrical service example" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        FABRIC (LIGHT) — FLIPPED
+        ========================= -->
+    <section class="svc-detail svc-detail--light svc-detail--flip" id="fabric-maintenance">
+      <div class="container svc-detail__inner">
+        <div class="svc-detail__copy svc-detail__copy--darkText">
+          <h2 class="svc-detail__title svc-detail__title--darkText">Fabric Maintenance</h2>
+          <p class="svc-detail__text svc-detail__text--darkText">
+            A critical part of maintaining asset integrity and increasing lifespan, NAIS provides the full array of fabric maintenance services — from survey/inspection through to preparation and coating application.
+            We deliver demanding maintenance scopes across a wide variety of environments and structures.
+          </p>
+
+          <h3 class="svc-detail__sub svc-detail__sub--darkText">Typical scopes include:</h3>
+          <ul class="svc-list svc-list--darkText">
+            <li>Paint inspection &amp; survey</li>
+            <li>Surface preparation</li>
+            <li>Coatings application</li>
+            <li>Blasting / spraying</li>
+            <li>Insulation works</li>
+          </ul>
+        </div>
+
+        <aside class="svc-detail__card svc-detail__card--light">
+          <img src="https://placehold.co/640x420" alt="Fabric maintenance example" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        INSPECTION (DARK)
+        ========================= -->
+    <section class="svc-detail svc-detail--dark" id="inspection-integrity">
+      <div class="container svc-detail__inner">
+        <div class="svc-detail__copy">
+          <h2 class="svc-detail__title">Inspection &amp; Integrity</h2>
+          <p class="svc-detail__text">
+            We provide a comprehensive range of specialist integrity and inspection services to the oil &amp; gas, petrochemical, renewable and industrial sectors.
+            Our inspection support helps clients identify issues early, plan maintenance effectively, and reduce operational risk.
+          </p>
+
+          <h3 class="svc-detail__sub">Typical scopes include:</h3>
+          <ul class="svc-list">
+            <li>NDT inspection support</li>
+            <li>Condition surveys and reporting</li>
+            <li>Inspection input for repair planning and close-out</li>
+          </ul>
+        </div>
+
+        <aside class="svc-detail__card">
+          <img src="https://placehold.co/640x420" alt="Inspection and integrity example" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        RENEWABLES (LIGHT) — FLIPPED
+        ========================= -->
+    <section class="svc-detail svc-detail--light svc-detail--flip" id="renewables">
+      <div class="container svc-detail__inner">
+        <div class="svc-detail__copy svc-detail__copy--darkText">
+          <h2 class="svc-detail__title svc-detail__title--darkText">Renewables</h2>
+          <p class="svc-detail__text svc-detail__text--darkText">
+            NAIS has built substantial knowledge and expertise supporting offshore wind, including experience across multiple offshore windfarm fields.
+            Our teams work on assets ranging from monopile foundations and jacket structures to offshore substations, delivering practical maintenance and repair support in marine environments.
+          </p>
+
+          <h3 class="svc-detail__sub svc-detail__sub--darkText">Typical scopes include:</h3>
+          <ul class="svc-list svc-list--darkText">
+            <li>NDT inspection</li>
+            <li>Repairs &amp; composite wraps</li>
+            <li>Marine growth removal</li>
+            <li>Coating repairs</li>
+            <li>Mechanical repairs</li>
+          </ul>
+        </div>
+
+        <aside class="svc-detail__card svc-detail__card--light">
+          <img src="https://placehold.co/640x420" alt="Renewables example" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        RIGGING (DARK IMAGE)
+        ========================= -->
+    <section class="svc-detail svc-detail--darkImage" id="rigging-mechanical"
+      style="--svc-bg-image:url('https://placehold.co/1600x900');">
+      <div class="svc-detail__media" aria-hidden="true"></div>
+      <div class="svc-detail__overlay" aria-hidden="true"></div>
+
+      <div class="container svc-detail__inner">
+        <div class="svc-detail__copy">
+          <h2 class="svc-detail__title">Rigging, Mechanical &amp; Construction Services</h2>
+          <p class="svc-detail__text">
+            Our highly experienced OPITO/NVQ and trade qualified riggers are capable of delivering complex rigging and lifting solutions both on and offshore.
+            We also support a wide range of mechanical and construction workscopes, including shutdown-critical activities.
+          </p>
+
+          <h3 class="svc-detail__sub">Typical scopes include:</h3>
+          <ul class="svc-list">
+            <li>Caisson removal / replacement</li>
+            <li>Structural installation</li>
+            <li>Decommissioning works</li>
+            <li>Pipefitting</li>
+            <li>Assisting with shutdown-critical scopes</li>
+          </ul>
+        </div>
+
+        <aside class="svc-detail__card">
+          <img src="https://placehold.co/640x420" alt="Rigging and mechanical example" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    <!-- =========================
+        CTA (DARK IMAGE)
+        ========================= -->
+    <section class="svc-cta" style="--svc-cta-image:url('https://placehold.co/1920x650');">
+      <div class="svc-cta__media" aria-hidden="true"></div>
+      <div class="svc-cta__overlay" aria-hidden="true"></div>
+
+      <div class="container svc-cta__inner">
+        <div class="svc-cta__box">
+          <h2 class="svc-cta__title">Need support on an upcoming scope?</h2>
+          <p class="svc-cta__text">
+            Tell us what you’re planning and we’ll help define the safest, most efficient way to deliver it.
+          </p>
+
+          <div class="svc-cta__actions">
+            <a class="btn btn--primary" href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider section-divider--fade" aria-hidden="true"></div>
+
+    
+
+  <!-- =========================
+       COMPONENT: FOOTER (UNIFIED — same as Home/About/Contact)
+       ========================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__col footer__brand">
+        <a class="footer__logoLink" href="nais_electrical.html" aria-label="NAIS Home">
+          <img
+            class="footer__logo"
+            src="https://placehold.co/180x60?text=LOGO"
+            alt="NAIS"
+            loading="lazy"
+          />
+        </a>
+
+        <p class="footer__tagline">
+          Integrated inspection, maintenance, and specialist services for critical onshore and offshore assets.
+        </p>
+
+        <div class="footer__social" aria-label="Social links">
+          <a class="social-btn" href="#" aria-label="NAIS on LinkedIn (coming soon)">
+            <svg class="social-btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.94 6.5A2.06 2.06 0 1 1 7 2.38a2.06 2.06 0 0 1-.06 4.12ZM5 21V8.5h3.9V21H5Zm6.1 0V8.5h3.74V10.2h.06c.52-.98 1.8-2.02 3.7-2.02C21.2 8.18 22 10 22 12.84V21h-3.9v-7.08c0-1.69-.03-3.87-2.35-3.87-2.35 0-2.71 1.84-2.71 3.75V21h-3.9Z"/>
+            </svg>
+            <span class="social-btn__text">LinkedIn</span>
+            <span class="social-btn__badge">Coming soon</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col footer__nav" aria-label="Footer navigation">
+        <h3 class="footer__heading">Pages</h3>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="nais_electrical.html">Home</a></li>
+          <li><a class="footer__link" href="about.html">About</a></li>
+          <li><a class="footer__link" href="services.html">Services</a></li>
+          <li><a class="footer__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__contact">
+        <h3 class="footer__heading">Contact</h3>
+
+        <ul class="footer__meta">
+          <li><span class="footer__metaLabel">Phone:</span> <a class="footer__link" href="tel:+440000000000">+44 0000 000000</a></li>
+          <li><span class="footer__metaLabel">Email:</span> <a class="footer__link" href="mailto:info@nais.co.uk">info@nais.co.uk</a></li>
+          <li><span class="footer__metaLabel">Location:</span> United Kingdom</li>
+        </ul>
+
+        <h3 class="footer__heading footer__heading--spaced">Opening times</h3>
+        <ul class="footer__meta">
+          <li><span class="footer__metaLabel">Mon–Fri:</span> 08:00 – 17:00</li>
+          <li><span class="footer__metaLabel">Sat–Sun:</span> Closed</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomInner">
+        <p class="footer__copy">© <span id="year"></span> NAIS. All rights reserved.</p>
+        <a class="footer__backTop" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
