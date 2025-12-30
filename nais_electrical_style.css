@@ -2393,3 +2393,29 @@
 .svc-card:hover .svc-card__media img{
   transform: scale(1.06);
 }
+
+/* === How we work: number colour shift on hover (match About behaviour) === */
+.step-card__num{
+  transition:
+    transform .18s ease,
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease;
+}
+
+.step-card:hover .step-card__num{
+  background: linear-gradient(135deg, var(--c-300), var(--c-600));
+  color: var(--c-900);
+  box-shadow: 0 12px 30px rgba(74,127,167,0.18);
+  transform: translateY(-1px);
+}
+
+/* Optional: keyboard focus gets the same treatment */
+.step-card:focus-within .step-card__num{
+  background: linear-gradient(135deg, var(--c-300), var(--c-600));
+  color: var(--c-900);
+  box-shadow:
+    0 0 0 3px rgba(179,207,229,0.75),
+    0 12px 30px rgba(74,127,167,0.18);
+}
