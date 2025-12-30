@@ -2350,3 +2350,46 @@
 .svc-card__media::before{
   bottom: -1px;                /* forces divider to sit flush */
 }
+
+/* === FIX: Services card divider flush with image (static) === */
+.svc-card__media{
+  position: relative;
+  overflow: hidden;   /* clips the zoomed image */
+  line-height: 0;     /* prevents any stray inline gap */
+}
+
+/* Make the image always fill the media area */
+.svc-card__media img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Remove the old divider pseudo-element if it exists */
+.svc-card__media::before{
+  content: none !important;
+}
+
+/* Draw the divider exactly at the bottom edge of the image */
+.svc-card__media::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:3px;
+  background: linear-gradient(90deg, transparent, rgba(179,207,229,0.65), transparent);
+  z-index: 2;
+  pointer-events:none;
+}
+
+/* Keep your hover zoom (same effect, but no gap now) */
+.svc-card:hover .svc-card__media img{
+  transform: scale(1.06);
+}
