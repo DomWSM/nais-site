@@ -1057,7 +1057,7 @@
   }
   .logo-row--center{ justify-content:center; }
   .logo-row__logo{
-    height: 96px;
+    height: 120px;
     width:auto;
     max-width: 360px;
     object-fit: contain;
