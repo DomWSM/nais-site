@@ -2516,3 +2516,7 @@
     background: rgba(10,25,49,0.08) !important;
     color: var(--c-600) !important;
   }
+
+  .nais-mobile__head{
+    border-bottom: 1px solid rgba(26,61,99,0.14);
+  }
