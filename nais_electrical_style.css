@@ -2489,3 +2489,30 @@
     align-items: center;
   }
 }
+
+/* =========================================================
+   MOBILE MENU (FIX: solid background + dark text)
+   ========================================================= */
+
+   .nais-mobile__sheet{
+    background: #e4eeff !important;               /* same as header/nav */
+    border-left: 1px solid rgba(26,61,99,0.14) !important;
+  }
+  
+  .nais-mobile__title,
+  .nais-mobile__close{
+    color: #1A3D63 !important;                    /* dark blue */
+  }
+  
+  /* Make the links readable on the light panel */
+  .nais-mobile__link{
+    background: rgba(10,25,49,0.06) !important;
+    border: 1px solid rgba(26,61,99,0.16) !important;
+    color: #1A3D63 !important;
+  }
+  
+  /* Optional: hover/active feel like the desktop nav */
+  .nais-mobile__link:hover{
+    background: rgba(10,25,49,0.08) !important;
+    color: var(--c-600) !important;
+  }
