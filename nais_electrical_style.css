@@ -2520,3 +2520,30 @@
   .nais-mobile__head{
     border-bottom: 1px solid rgba(26,61,99,0.14);
   }
+
+  /* =========================================================
+   FIX: Mobile drawer is transparent (backdrop stacking)
+   ========================================================= */
+
+/* Make sure the drawer is ABOVE the dark backdrop */
+.nais-mobile__sheet{
+  z-index: 2 !important;
+  background: #e4eeff !important;     /* solid */
+  background-image: none !important;
+}
+
+.nais-mobile__backdrop{
+  z-index: 1 !important;
+}
+
+/* (Extra safety) ensure the links area is also solid */
+.nais-mobile__links{
+  background: #e4eeff !important;
+}
+
+/* Keep text dark blue for contrast */
+.nais-mobile__title,
+.nais-mobile__close,
+.nais-mobile__link{
+  color: #1A3D63 !important;
+}
