@@ -1071,7 +1071,7 @@
     .reassure__panel{ margin-top: 0; }
   }
   @media (max-width: 560px){
-    .logo-row__logo{ height:54px; max-width:100%; }
+    .logo-row__logo{ height:96px; max-width:100%; }
   }
   
   /* 5.7 HOME: BOTTOM CTA (bg image + overlay) */
