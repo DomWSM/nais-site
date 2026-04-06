@@ -2547,3 +2547,38 @@
 .nais-mobile__link{
   color: #1A3D63 !important;
 }
+
+/* =========================================================
+   FIX: Home page grids after removing cards
+   - Services: 3 cards should sit in a single row (3 cols)
+   - Industries: 3 cards should sit in a single row (3 cols)
+   ========================================================= */
+
+/* --- SERVICES (desktop): make it a true 3-column grid --- */
+@media (min-width: 981px){
+  .services__grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* Let cards naturally flow into the 3 columns */
+  .svc-card{
+    grid-column: auto;
+  }
+
+  /* Disable the old "row 2" positioning rules (used when there were 5 cards) */
+  .svc-card--row2-left,
+  .svc-card--row2-right{
+    grid-column: auto !important;
+  }
+}
+
+/* --- INDUSTRIES (desktop): make it a true 3-column grid --- */
+@media (min-width: 981px){
+  .industries__grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .industry-card{
+    grid-column: auto;
+  }
+}
