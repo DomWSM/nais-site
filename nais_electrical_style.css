@@ -2582,3 +2582,17 @@
     grid-column: auto;
   }
 }
+
+/* ABOUT: Pill row — one line when possible */
+.about-pillgrid{
+  display: flex;
+  flex-wrap: nowrap;              /* try to keep on one line */
+  gap: 10px;
+  overflow-x: auto;               /* prevents ugly wrapping on smaller widths */
+  -webkit-overflow-scrolling: touch;
+}
+
+.about-pill{
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
